@@ -14,7 +14,7 @@
             $this -> pkmnName = $pkmnName;
             $this -> pkmnNbr = $pkmnNbr;
             $this -> pkmnType = $pkmnType;
-            echo "New Pokemon " . $this->pkmnName . " added.";
+            //echo "New Pokemon " . $this->pkmnName . " added.<br>";
         }
 		
 		public function get_Name(){
@@ -34,7 +34,7 @@
 
     }
 
-	$pika = new Pokemon('pikachu',25,'elek');
+	//$pika = new Pokemon('pikachu',25,'elek');
 
 
     
