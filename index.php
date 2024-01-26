@@ -7,15 +7,15 @@
 </head>
 <body>
     
-    <form action="POST">
+    <form action="form.php" method="POST">
 
     <input type="text" name="pkmnName" placeholder="Enter the Pokemon's name">
 
-    <input type="button">
+    <input type="submit" value="Search">
 
-    <input type="text" value="POKEMON NUMBER">
+    <!-- <input type="text" value="POKEMON NUMBER" readonly>
     
-    <input type="text" value="POKEMON TYPE">
+    <input type="text" value="POKEMON TYPE" readonly> -->
 
     </form>
 
