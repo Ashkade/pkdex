@@ -1,13 +1,13 @@
 <?php
 
-    //include 'table.php';
+    include 'tablepkdex.php';
     include 'class.php';
 
-    $listPkmn = [
-        ["Name" => "Pikachu" , "Nbr" => 1 , "Type" => "Elek"],
-        ["Name" => "Fantominus" , "Nbr" => 2 , "Type" => "Spectre"],
-        ["Name" => "Ronflex" , "Nbr" => 3 , "Type" => "Normal"]
-    ];
+    // $listPkmn = [
+    //     ["Name" => "Pikachu" , "Nbr" => 1 , "Type" => "Elek"],
+    //     ["Name" => "Fantominus" , "Nbr" => 2 , "Type" => "Spectre"],
+    //     ["Name" => "Ronflex" , "Nbr" => 3 , "Type" => "Normal"]
+    // ];
     
 
     //$pikachu = new Pokemon('pikachu',25,'elek');
@@ -15,16 +15,28 @@
     $pkmn = $_POST["pkmnName"];
     //var_dump($pkmn);
 
-    for ($i=0; $i < count($listPkmn) ; $i++) { 
-        if($listPkmn[$i]["Name"]==$pkmn){
+    // for ($i=0; $i < count($listPkmn) ; $i++) { 
+    //     if($listPkmn[$i]["Name"]==$pkmn){
                         
-            $pkmn_name = $listPkmn[$i]["Name"];
-            $pkmn_nbr = $listPkmn[$i]["Nbr"];
-            $pkmn_type = $listPkmn[$i]["Type"];
+    //         $pkmn_name = $listPkmn[$i]["Name"];
+    //         $pkmn_nbr = $listPkmn[$i]["Nbr"];
+    //         $pkmn_type = $listPkmn[$i]["Type"];
+
+    //         $pkmnfound = true;
+    //     }
+    // }
+
+    foreach ($listPkmn as $poke){
+        if($poke["Name"]==$pkmn){
+
+            $pkmn_name = $poke["Name"];
+            $pkmn_nbr = $poke["Nbr"];
+            $pkmn_type = $poke["Type"];
 
             $pkmnfound = true;
         }
     }
+
     // foreach($listPkmn as $pokemon){
     //     if($pokemon["Name"]!=$pkmn){
     //         echo "Pokemon not found in our database";
